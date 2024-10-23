@@ -28,7 +28,7 @@ section {
 /* Hero section styling starts */
 section.hero {
     height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -139,7 +139,7 @@ section.places {
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: darken;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -194,16 +194,55 @@ section.places button {
     border: 0.5px solid;
     border-radius: 5px;
     background-color: rgb(186, 216, 206);
+    opacity: 0.65;
     font-size: 1rem;
 }
-
 /* Places section styling ends */
 
-/* Facts section styling starts */
-/* Facts section styling ends */
+/* Activity section styling starts */
+section.activity {
+    background: url("./assets/images/alaska-picture7-lineKjaer.jpg") center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    background-size: cover;
+    width: 100%;
+    height: 65vh;
+    display: none;
+    justify-content: space-around;
+    padding: 100px;
+    gap: 4rem;
+    overflow: hidden;
+}
 
-/* wild-life section styling starts */
-/* wilf-life section styling ends */
+section.activity h2 {
+    font-size: var(--font-size-h2);
+    /* padding: 5rem 3rem 3rem 3rem; */
+    position: relative;
+    flex: 1 0 45%;
+    text-align: start;
+}
+
+section.activity .activity-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 1.5rem;
+} 
+
+section.activity .activity-info-container h4 {
+    font-size: 2rem;
+}
+
+section.activity .activity-info-container p {
+    width: 80%;
+    font-size: 1.3rem;
+    margin-bottom: 1.25rem;
+}
+/* Activity section styling ends */
+
+/* Facts section styling starts */
+
+/* Facts section styling ends */
 
 /* Review section styling starts */
 /* Review section styling ends */
