@@ -241,10 +241,39 @@ section.activity .activity-info-container p {
 /* Activity section styling ends */
 
 /* Facts section styling starts */
+section.facts {
+    background: url("./assets/images/alaska-picture8-frankThiemonge.jpg");
+    background-size: cover;
+    background-color: rgba(243, 228, 228, 0.3);
+    background-blend-mode: lighten;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 2rem 0 2rem;
+}
 
+section.facts .fact {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 33, 33);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+}
+
+section.facts .fact h2 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
 /* Facts section styling ends */
 
 /* Review section styling starts */
+
 /* Review section styling ends */
 
 /* Image-scrollable section styling starts */
