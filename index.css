@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
     overflow-y: scroll;
     --font-size-h2: 4rem;
@@ -8,6 +6,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -87,7 +87,6 @@ section.intro {
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
-    width: 100%;
     height: 85vh;
     display: none;
     justify-content: space-around;
@@ -134,7 +133,6 @@ section.intro .intro-paragraph-container .read-more-btn:hover {
 /* places section styling starts */
 section.places {
     height: 85vh;
-    width: 100%;
     background: url("./assets/images/alaska-picture3-annieSpratt.jpg") no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.3);
@@ -205,7 +203,6 @@ section.activity {
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
     background-size: cover;
-    width: 100%;
     height: 65vh;
     display: none;
     justify-content: space-around;
@@ -246,12 +243,11 @@ section.facts {
     background-size: cover;
     background-color: rgba(243, 228, 228, 0.3);
     background-blend-mode: lighten;
-    width: 100%;
     height: 70vh;
-    display: flex;
-    justify-content: space-evenly;
+    display: none;
+    justify-content: center;
     align-items: center;
-    padding: 0 2rem 0 2rem;
+    gap: 4rem;
 }
 
 section.facts .fact {
@@ -273,7 +269,44 @@ section.facts .fact h2 {
 /* Facts section styling ends */
 
 /* Review section styling starts */
+section.review {
+    background: url("./assets/images/alaska-picture9-roman_romanenko.jpg") center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 
+section.review .reviewer-picture {
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+section.review .reviewer-paragraph {
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+section.review .reviewer-name {
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    bottom: 2rem;
+}
+
+section.review .drop-down-icon {
+    width: 80px;
+    height: 75px;
+    margin-bottom: 2rem;
+}
 /* Review section styling ends */
 
 /* Image-scrollable section styling starts */
