@@ -28,7 +28,7 @@ section {
 /* Hero section styling starts */
 section.hero {
     height: 100vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
