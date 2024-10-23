@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    --font-size-h2: 4rem;
+    --text-color: rgba(255, 255, 255, 0.9);
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    color: rgba(244, 244, 244, 1);
+}
+
+.parent-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+section {
+    width: 100vw;
+    color: var(--text-color);
+}
+
+/* Hero section styling starts */
+section.hero {
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+section.hero video {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+section.hero .hero-info-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+section.hero img {
+    position: relative;
+    bottom: 20%;
+    height: 15vh;
+    min-height: 50px;
+    flex: 0 1 100px;
+}
+
+section.hero h1 {
+    position: relative;
+    bottom: 5%;
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+section.hero .hero-bottom {
+    position: relative;
+    top: 27%;
+    text-align: center;
+}
+
+section.hero .hero-bottom .drop-down-logo img {
+    width: 3.5rem;
+    height: 3rem;
+}
+
+
+
+/* Hero section styling ends */
+
+/* Intro section styling starts */
+section.intro {
+    background: url('./assets/images/alaska-picture1-calebRiston.jpg') no-repeat;
+    position: relative;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    width: 100%;
+    height: 85vh;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.intro .intro-title {
+    position: relative;
+    top: 10rem;
+    align-self: self-start;
+    font-size: 4rem;
+    margin: 0 2rem 0 4rem;
+    width: 50%;
+    min-width: 30%;
+    min-height: 70%;
+    overflow: scroll;
+}
+
+section.intro .intro-paragraph-container {
+    width: 50%;
+    max-height: 70%;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section.intro .intro-paragraph-container .read-more-btn {
+    width: 100px;
+    height: 50px;
+    align-self: center;
+    background-color: rgba(249, 180, 45, 1);
+    border: none;
+    border-radius: 100px;
+}
+
+section.intro .intro-paragraph-container .read-more-btn:hover {
+    background-color: rgb(231, 155, 3);
+}
+/* Intro section styling ends */
+
+/* places section styling starts */
+section.places {
+    height: 85vh;
+    width: 100%;
+    background: url("./assets/images/alaska-picture3-annieSpratt.jpg") no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.places .places-title {
+    font-size: var(--font-size-h2);
+    width: 80%;
+    text-align: center;
+}
+
+section.places .places-container {
+    display: flex;
+    width: 88%;
+    height: 50%;
+    justify-content: space-between;
+}
+
+section.places .places-container div {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 1px;
+}
+
+section.places .places-container .place-1 {
+    /* background: url("./assets/images/alaska-picture4-mckaylaCrump.jpg") no-repeat center; */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgb(68, 68, 68) 100%), url("./assets/images/alaska-picture4-mckaylaCrump.jpg");
+    background-size: cover;
+}
+
+section.places .places-container div img {
+    width: 2rem;
+    height: 1.5rem;
+}
+
+section.places .places-container .place-2 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgb(68, 68, 68) 100%), url("./assets/images/alaska-picture5-patrickFederi.jpg") no-repeat center;
+    background-size: cover;
+}
+
+section.places .places-container .place-3 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgb(68, 68, 68) 100%), url("./assets/images/alaska-picture6-timothyHolmes.jpg") no-repeat center;
+    background-size: cover;
+}
+
+section.places button {
+    width: 120px;
+    height: 50px;
+    border: 0.5px solid;
+    border-radius: 5px;
+    background-color: rgb(186, 216, 206);
+    font-size: 1rem;
+}
+
+/* Places section styling ends */
+
+/* Facts section styling starts */
+/* Facts section styling ends */
+
+/* wild-life section styling starts */
+/* wilf-life section styling ends */
+
+/* Review section styling starts */
+/* Review section styling ends */
+
+/* Image-scrollable section styling starts */
+/* Image-scrollable section styling ends */
+
+/* Conctact section styling starts */
+/* Contact section styling ends */
