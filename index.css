@@ -1,8 +1,14 @@
 * {
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: scroll;
     --font-size-h2: 4rem;
     --text-color: rgba(255, 255, 255, 0.9);
+}
+
+h2,
+p {
+    margin:0;
+    padding: 0;
 }
 
 body {
@@ -14,14 +20,7 @@ body {
     color: rgba(244, 244, 244, 1);
 }
 
-.parent-container {
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
 section {
-    width: 100vw;
     color: var(--text-color);
 }
 
@@ -47,27 +46,21 @@ section.hero .hero-info-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 3rem 0 3rem 0;
     height: 100%;
 }
 
 section.hero img {
     position: relative;
-    bottom: 20%;
     height: 15vh;
     min-height: 50px;
-    flex: 0 1 100px;
 }
 
 section.hero h1 {
-    position: relative;
-    bottom: 5%;
-    font-size: 7rem;
-    margin-bottom: 2rem;
+    font-size: 8rem;
 }
 section.hero .hero-bottom {
-    position: relative;
-    top: 27%;
     text-align: center;
 }
 
@@ -75,9 +68,6 @@ section.hero .hero-bottom .drop-down-logo img {
     width: 3.5rem;
     height: 3rem;
 }
-
-
-
 /* Hero section styling ends */
 
 /* Intro section styling starts */
@@ -87,15 +77,16 @@ section.intro {
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
-    height: 85vh;
+    height: 90vh;
     display: none;
     justify-content: space-around;
     align-items: center;
+    padding: 3rem;
 }
 
 section.intro .intro-title {
     position: relative;
-    top: 10rem;
+    top: 5rem;
     align-self: self-start;
     font-size: 4rem;
     margin: 0 2rem 0 4rem;
@@ -132,7 +123,7 @@ section.intro .intro-paragraph-container .read-more-btn:hover {
 
 /* places section styling starts */
 section.places {
-    height: 85vh;
+    height: 90vh;
     background: url("./assets/images/alaska-picture3-annieSpratt.jpg") no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.3);
@@ -141,6 +132,7 @@ section.places {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding: 3rem;
 }
 
 section.places .places-title {
@@ -203,37 +195,37 @@ section.activity {
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
     background-size: cover;
-    height: 65vh;
+    height: 85vh;
     display: none;
-    justify-content: space-around;
-    padding: 100px;
-    gap: 4rem;
-    overflow: hidden;
+    justify-content: center;
+    padding: 3rem;
 }
 
 section.activity h2 {
+    width: 50%;
     font-size: var(--font-size-h2);
-    /* padding: 5rem 3rem 3rem 3rem; */
-    position: relative;
-    flex: 1 0 45%;
     text-align: start;
 }
 
 section.activity .activity-info-container {
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
 } 
 
 section.activity .activity-info-container h4 {
-    font-size: 2rem;
+    flex-grow: 0;
+    font-size: 1.5rem;
 }
 
 section.activity .activity-info-container p {
-    width: 80%;
+    flex-grow: 0;
     font-size: 1.3rem;
-    margin-bottom: 1.25rem;
+    width: 80%;
+    display: block;
 }
 /* Activity section styling ends */
 
@@ -275,7 +267,7 @@ section.review {
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     height: 95vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -310,6 +302,68 @@ section.review .drop-down-icon {
 /* Review section styling ends */
 
 /* Image-scrollable section styling starts */
+section.images {
+    height: 55vh;
+    display: none;
+}
+
+section.images .image{
+    display: block;
+    position: relative;
+    width: 25vw;
+    height: 100%;
+}
+
+section.images .image.one {
+    background: url("./assets/images/alaska-picture10-richManalang.jpg");
+    background-size: cover;
+}
+
+section.images .image.two {
+    background: url("./assets/images/alaska-picture11-calebRiston.jpg");
+    background-size: cover;
+}
+
+section.images .image.three {
+    background: url("./assets/images/alaska-picture12-coryGazaille.jpg");
+    background-size: cover;
+}
+
+section.images .image.four {
+    background: url("./assets/images/alaska-picture13-michaelChen.jpg");
+    background-size: cover;
+}
+
+section.images .icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100; 
+}
+
+section.images .image-logo-container {
+    width: 100vw;
+    height: 55vh;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.images .image-logo-container .icon.left {
+    position: relative;
+    align-self: center;
+    transform: rotate(0.25turn);
+}
+
+section.images .image-logo-container .icon.right {
+    position: relative;
+    align-self: center;
+    transform: rotate(0.75turn);
+}
+
+
+
 /* Image-scrollable section styling ends */
 
 /* Conctact section styling starts */
