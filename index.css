@@ -5,6 +5,13 @@
     --text-color: rgba(255, 255, 255, 0.9);
 }
 
+.credit {
+    color: var(--text-color);
+    width: auto;
+    height: 2rem;
+    font-size: 1rem;
+}
+
 h2,
 p {
     margin:0;
@@ -42,13 +49,21 @@ section.hero video {
 }
 
 section.hero .hero-info-wrapper {
+    overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 0 3rem 0;
-    height: 100%;
+    padding: 6rem 0 8rem 0;
+    width: 90%;
+    height: 90%;
+}
+
+section.hero .hero-info-wrapper p {
+    position: relative;
+    bottom: 7em;
+    font-size: 1.1rem;
 }
 
 section.hero img {
@@ -60,8 +75,20 @@ section.hero img {
 section.hero h1 {
     font-size: 8rem;
 }
+
 section.hero .hero-bottom {
     text-align: center;
+    position: relative;
+    top: 7rem;
+    height: 7rem;
+}
+
+section.hero .hero-bottom p{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    top: 1px;
 }
 
 section.hero .hero-bottom .drop-down-logo img {
@@ -78,15 +105,15 @@ section.intro {
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
     height: 90vh;
-    display: none;
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 3rem;
+    padding: 0 3rem;
 }
 
 section.intro .intro-title {
     position: relative;
-    top: 5rem;
+    padding-top: 5rem;
     align-self: self-start;
     font-size: 4rem;
     margin: 0 2rem 0 4rem;
@@ -98,7 +125,8 @@ section.intro .intro-title {
 
 section.intro .intro-paragraph-container {
     width: 50%;
-    max-height: 70%;
+    height: 90%;
+    padding-top: 5rem;
     font-size: 1.5rem;
     margin-right: 2rem;
     text-align: left;
@@ -111,13 +139,13 @@ section.intro .intro-paragraph-container .read-more-btn {
     width: 100px;
     height: 50px;
     align-self: center;
-    background-color: rgba(249, 180, 45, 1);
+    background-color: rgba(255, 255, 255, 0.9);
     border: none;
-    border-radius: 100px;
+    border-radius: 10px;
 }
 
 section.intro .intro-paragraph-container .read-more-btn:hover {
-    background-color: rgb(231, 155, 3);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 /* Intro section styling ends */
 
@@ -128,7 +156,7 @@ section.places {
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: darken;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -157,16 +185,17 @@ section.places .places-container div {
     padding-bottom: 1px;
 }
 
+section.places .places-container div img {
+    width: 2rem;
+    height: 1.5rem;
+}
+
 section.places .places-container .place-1 {
     /* background: url("./assets/images/alaska-picture4-mckaylaCrump.jpg") no-repeat center; */
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgb(68, 68, 68) 100%), url("./assets/images/alaska-picture4-mckaylaCrump.jpg");
     background-size: cover;
 }
 
-section.places .places-container div img {
-    width: 2rem;
-    height: 1.5rem;
-}
 
 section.places .places-container .place-2 {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgb(68, 68, 68) 100%), url("./assets/images/alaska-picture5-patrickFederi.jpg") no-repeat center;
@@ -320,7 +349,7 @@ section.images .image.one {
 }
 
 section.images .image.two {
-    background: url("./assets/images/alaska-picture11-calebRiston.jpg");
+    background: url("./assets/images/alaska-picture11-calebRibston.jpg");
     background-size: cover;
 }
 
