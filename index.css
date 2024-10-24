@@ -361,10 +361,86 @@ section.images .image-logo-container .icon.right {
     align-self: center;
     transform: rotate(0.75turn);
 }
-
-
-
 /* Image-scrollable section styling ends */
 
 /* Conctact section styling starts */
+section.contact {
+    background: url("./assets/images/alaska-picture14-kedarGadge.jpg") no-repeat center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    height: 85vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 3rem;
+}
+
+section.contact .company-contact {
+    width: 40%;
+}
+
+section.contact .company-contact .contact-title{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+section.contact .company-contact p{
+    font-size: 1.2rem;
+    padding: 3px 0;
+}
+
+section.contact .company-contact .logo-container{
+    margin-top: 1rem;
+}
+
+section.contact .company-contact .logo-container .contact{
+    width: 30px;
+    height: 30px;
+    padding: 0.4rem;
+}
+
+section.contact .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+
+section.contact .form-container input {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    height: 3rem;
+    background: none;
+    border: rgb(255, 255, 255) 1px solid;
+    color: var(--text-color);
+}
+section.contact .form-container input::placeholder {
+    color: var(--text-color);
+}
+
+section.contact .form-container textarea {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    height: 8rem;
+    background: none;
+    border: rgb(255, 255, 255) 1px solid;
+    color: var(--text-color);
+    
+}
+
+section.contact .form-container textarea::placeholder {
+    color: var(--text-color);
+}
+
+section.contact .form-container button {
+    width: 90px;
+    height: 35px;
+    font-size: 1rem;
+    align-self: end;
+    
+}
+
 /* Contact section styling ends */
