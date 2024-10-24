@@ -1,6 +1,4 @@
 * {
-    overflow-x: scroll;
-    overflow-y: scroll;
     --font-size-h2: 4rem;
     --text-color: rgba(255, 255, 255, 0.9);
 }
@@ -28,6 +26,7 @@ body {
 }
 
 section {
+    width: 100vw;
     color: var(--text-color);
 }
 
@@ -120,7 +119,6 @@ section.intro .intro-title {
     width: 50%;
     min-width: 30%;
     min-height: 70%;
-    overflow: scroll;
 }
 
 section.intro .intro-paragraph-container {
