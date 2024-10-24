@@ -34,7 +34,7 @@ section {
 /* Hero section styling starts */
 section.hero {
     height: 100vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -140,7 +140,7 @@ section.intro .intro-paragraph-container .read-more-btn {
     height: 50px;
     align-self: center;
     background-color: rgba(255, 255, 255, 0.9);
-    border: none;
+    border: flex;
     border-radius: 10px;
 }
 
@@ -225,7 +225,7 @@ section.activity {
     background-blend-mode: darken;
     background-size: cover;
     height: 85vh;
-    display: none;
+    display: flex;
     justify-content: center;
     padding: 3rem;
 }
@@ -265,7 +265,7 @@ section.facts {
     background-color: rgba(243, 228, 228, 0.3);
     background-blend-mode: lighten;
     height: 70vh;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
@@ -296,7 +296,7 @@ section.review {
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     height: 95vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -333,7 +333,7 @@ section.review .drop-down-icon {
 /* Image-scrollable section styling starts */
 section.images {
     height: 55vh;
-    display: none;
+    display: flex;
 }
 
 section.images .image{
@@ -424,8 +424,8 @@ section.contact .company-contact .logo-container{
 }
 
 section.contact .company-contact .logo-container .contact{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     padding: 0.4rem;
 }
 
